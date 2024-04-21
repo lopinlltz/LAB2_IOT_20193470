@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ContadorActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -100,7 +101,7 @@
                         android:layout_width="161dp"
                         android:layout_height="82dp"
                         android:layout_gravity="center_vertical"
-                        android:text="20"
+                        android:text=""
                         android:textSize="18dp" />
                 </LinearLayout>
 
@@ -165,7 +166,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="#34C334"
-                                android:text="Descender"
+                                android:text="@string/descender"
                                 android:textAllCaps="false"
                                 android:textColor="#EDEDED"
                                 android:textSize="18dp" />
@@ -205,7 +206,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:background="#34C334"
-                                android:text="Pausar"
+                                android:text="@string/pausar"
                                 android:textAllCaps="false"
                                 android:textColor="#EDEDED"
                                 android:textSize="18dp" />
@@ -217,15 +218,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center_vertical"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:textSize="18dp"
-                        android:text="Actualmente el contador esta descendiendo" />
+                        android:layout_gravity="center_vertical"
+                        android:text="Actualmente el contador esta "
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/descendiendo"
+                        android:textSize="18dp"/>
                 </LinearLayout>
             </LinearLayout>
 

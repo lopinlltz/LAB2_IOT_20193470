@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">iot_lab2_20193470</string>
+    <string name="descender">Descender</string>
+    <string name="ascender">Ascender</string>
+    <string name="pausar">Pausar</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="descendiendo">descendiendo</string>
+    <string name="ascendiendo">ascendiendo</string>
 </resources>
