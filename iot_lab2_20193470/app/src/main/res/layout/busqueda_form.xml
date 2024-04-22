@@ -22,7 +22,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView_title"
+                android:id="@+id/textViewTITLE"
                 android:layout_width="355dp"
                 android:layout_height="63dp"
                 android:layout_gravity="center_horizontal"
@@ -51,7 +51,7 @@
             <ScrollView
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="177dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/linear_layout_ratings"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -61,50 +61,92 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textView_year"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Year" />
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView_rated"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Rated" />
+                        <TextView
+                            android:id="@+id/textView_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Year" />
 
-                    <TextView
-                        android:id="@+id/textView_runtime"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Runtime" />
+                        <TextView
+                            android:id="@+id/textView_rated"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rated" />
 
-                    <TextView
-                        android:id="@+id/textView_genre"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Genre" />
 
-                    <TextView
-                        android:id="@+id/textView_director"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Director" />
+                        <TextView
+                            android:id="@+id/textView_runtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Runtime" />
+
+                        <TextView
+                            android:id="@+id/textView_genre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genre" />
+
+                        <TextView
+                            android:id="@+id/textView_director"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Director" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="259dp"
+                        android:layout_height="74dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewYEAR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Year" />
+
+                        <TextView
+                            android:id="@+id/textViewRATED"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rated" />
+
+
+                        <TextView
+                            android:id="@+id/textViewRUNTIME"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Runtime" />
+
+                        <TextView
+                            android:id="@+id/textViewGENRE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Genre" />
+
+                        <TextView
+                            android:id="@+id/textViewDIRECTOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Director" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </ScrollView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="12dp"
-                android:orientation="horizontal"></LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="283dp"
+                android:layout_height="373dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -160,18 +202,97 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linear_layout_ratings"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="101dp"
+                    android:orientation="horizontal">
 
+                    <LinearLayout
+                        android:layout_width="251dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="36dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="179dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Internet Movie Database" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="179dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Rotten Tomatoes" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="29dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView14"
+                                android:layout_width="179dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Metacritic" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="39dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewIMDB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8.9/10" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="31dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewRT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="91%" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="31dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textViewMETA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="91%" />
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
-
-
 
 
             </LinearLayout>
@@ -209,7 +330,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:background="#34C334"
-                    android:text="Descender"
+                    android:text="Regresar"
                     android:textAllCaps="false"
                     android:textColor="#EDEDED"
                     android:textSize="16dp" />
